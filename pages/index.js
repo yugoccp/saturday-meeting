@@ -3,6 +3,11 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 
 export default function Home() {
+
+  fetch("/.netlify/functions/hello")
+    .then(resp => resp.json())
+    .then(console.log)
+    
   return (
     <div className="container">
       <Head>
