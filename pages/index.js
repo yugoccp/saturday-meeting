@@ -4,10 +4,10 @@ import Footer from '@components/Footer'
 
 export default function Home() {
 
-  fetch("/.netlify/functions/hello")
-    .then(resp => resp.json())
-    .then(console.log)
-    
+  // fetch("/.netlify/functions/hello")
+  //   .then(resp => resp.json())
+  //   .then(console.log)
+
   return (
     <div className="container">
       <Head>
@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to Saturday Meeting!" />
+        <Header title="Welcome to Saturday Meeting 03 Apr 2021!" />
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
