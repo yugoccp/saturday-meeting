@@ -7,7 +7,7 @@ export default function Home() {
   function callServelessFunction() {
     fetch("/.netlify/functions/hello")
     .then(resp => resp.json())
-    .then(alert)
+    .then(data => alert(data.message))
   }
   
   return (
@@ -22,7 +22,7 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
-        <button onClick={callServelessFunction} />
+        <button onClick={callServelessFunction}>Click me!</button>
       </main>
 
       <Footer />
