@@ -4,10 +4,12 @@ import Footer from '@components/Footer'
 
 export default function Home() {
 
-  // fetch("/.netlify/functions/hello")
-  //   .then(resp => resp.json())
-  //   .then(console.log)
-
+  function callServelessFunction() {
+    fetch("/.netlify/functions/hello")
+    .then(resp => resp.json())
+    .then(alert)
+  }
+  
   return (
     <div className="container">
       <Head>
@@ -20,6 +22,7 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
+        <button onClick={callServelessFunction} />
       </main>
 
       <Footer />
