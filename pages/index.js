@@ -5,7 +5,7 @@ import Footer from '@components/Footer'
 export default function Home() {
 
   function callServelessFunction() {
-    fetch("/.netlify/functions/hello")
+    fetch("/.netlify/functions/world")
     .then(resp => resp.json())
     .then(data => alert(data.message))
   }
